@@ -1,0 +1,560 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.Btncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn :hover {
+    background-color: #094f7e;
+}
+
+.btn :active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+}
+
+.header {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(vino12.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    /* Aplicamos el filtro de brillo solo a la imagen de fondo */
+    z-index: -1;
+    /* Colocamos la imagen de fondo detrás del contenido */
+}
+
+.header-text h1 {
+    font-size: 100px;
+}
+
+#playButton {
+    display: none;
+}
+
+#miAudio {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #34e9d0;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+}
+
+.menu {
+    display: Flex;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.header-text {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
+}
+
+.header-text h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.header-text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.services {
+    padding: 50px 0px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service {
+    padding: 30px 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.porfolio-txt h2 {
+    font-size: 55px;
+    margin: 35px;
+}
+
+.porfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porfolio-txt {
+    text-align: center;
+}
+
+.txt h2 {
+    display: grid;
+    justify-content: center;
+}
+
+.Recorrido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 */
+    width: 100%;
+    height: 0;
+}
+
+.Recorrido iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria {
+    display: flex;
+    width: 500px;
+    height: 300px;
+}
+
+.galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+
+.galeria img:hover {
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: #000000;
+}
+
+.AyudaContainer {
+    display: inline-block;
+}
+
+.AyudaContainer img {
+    width: 250px;
+    height: 280px;
+    top: 400px;
+    /* Ajusta la posición vertical del avatar */
+    left: 2000px;
+    /* Ajusta la posición horizontal del avatar */
+    position: static;
+}
+
+.AyudaContainer select {
+    padding: 12px 24px;
+    border: 2px solid #094f7e;
+    border-radius: 8px;
+    font-size: 20px;
+    position: relative;
+    left: auto;
+    top: -100px;
+}
+
+.MapHoteles {
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    left: 600px;
+    top: -300px;
+    width: 150%;  
+    height: 0;    
+    padding-bottom: 100%;
+   
+}
+
+.MapHoteles iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.LblInfo {
+    display: none;
+    font-size: 25px;
+    left: 40px;
+    top: 35px;
+    position: relative;
+}
+
+.avatar2 {
+    margin: auto;
+    width: 200px;
+    animation-name: latir;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes latir {
+    0% {
+        transform: scale(.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.5);
+    }
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.contact-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-icons1 a {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons1 a:hover {
+    color: #666666;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #666;
+}
+
+.avatar {
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    top: 400px;
+    /* Ajusta la posición vertical del avatar */
+    left: 1180px;
+    /* Ajusta la posición horizontal del avatar */
+    cursor: pointer;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 80%;
+    /* Ajusta la posición vertical del mensaje de bienvenida */
+    left: 80%;
+    /* Ajusta la posición horizontal del mensaje de bienvenida */
+    transform: translate(-50%, -50%);
+    /* Centra verticalmente y horizontalmente */
+    font-size: 30px;
+    /* Ajusta el tamaño de fuente del mensaje de bienvenida */
+}
+
+
+/*responive*/
+
+@media (max-width: 991px) {
+    header {
+        height: 55vh;
+    }
+    .header-text {
+        margin-top: -20px;
+        padding: 0px 25px;
+    }
+    .header-text h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .menu .navbar ul li {
+        opacity: 0;
+    }
+    .services {
+        padding: 30px;
+    }
+    .group-services {
+        flex-direction: column;
+    }
+    .service {
+        margin-bottom: 10px;
+        /* Espaciado inferior reducido */
+    }
+    .porfolio {
+        padding: 0px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .porfolio-txt p {
+        margin: 0px;
+    }
+    .imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgs img {
+        margin: 15px 0px 0px 0px;
+    }
+    .porfolio-container {
+        display: flex;
+    }
+    .txt h2 {
+        display: grid;
+        justify-content: center;
+    }
+    .galeria {
+        display: flex;
+        width: 345px;
+        height: 200px;
+    }
+    .galeria img {
+        flex-grow: 1;
+        object-fit: cover;
+        filter: brightness(80%);
+        transition: .7s ease;
+    }
+    .galeria img:hover {
+        width: 500px;
+        opacity: 1;
+        filter: brightness(130%);
+    }
+    .bg-txt {
+        padding: 30px;
+    }
+    .avatar2 {
+        margin: auto;
+        width: 200px;
+        animation-name: latir;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes latir {
+        0% {
+            transform: scale(.5);
+        }
+        50% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(.5);
+        }
+    }
+    .AyudaContainer {
+        display: column;
+        grid: 10px;
+    }
+    .AyudaContainer img {
+        width: 150px;
+        height: 180px;
+        top: -0px;
+        /* Ajusta la posición vertical del avatar */
+        left: 125px;
+        /* Ajusta la posición horizontal del avatar */
+        position: relative;
+    }
+    .AyudaContainer select {
+        padding: 12px 24px;
+        border: 2px solid #094f7e;
+        border-radius: 8px;
+        font-size: 15px;
+        position: relative;
+        left: -135px;
+        top: 35px;
+    }
+    .MapHoteles {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        width: 115%;
+        height: 0;
+        padding-bottom: 100%;
+    }
+    .MapHoteles iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    .LblInfo {
+        display: none;
+    }
+    .lbltxt {
+        display: none;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 75px;
+        top: -325px;
+    }
+    .numbers {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .avatar {
+        width: 150px;
+        height: 180px;
+        position: absolute;
+        top: 600px;
+        /* Ajusta la posición vertical del avatar */
+        left: 250px;
+        /* Ajusta la posición horizontal del avatar */
+        cursor: pointer;
+    }
+    .welcome-message {
+        position: absolute;
+        top: 75%;
+        /* Ajusta la posición vertical del mensaje de bienvenida */
+        left: 82%;
+        /* Ajusta la posición horizontal del mensaje de bienvenida */
+        transform: translate(-50%, -50%);
+        /* Centra verticalmente y horizontalmente */
+        font-size: 25px;
+        /* Ajusta el tamaño de fuente del mensaje de bienvenida */
+    }
+}

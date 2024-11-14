@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/csslogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Inicio de sesion</title>
+</head>
+
+<body>
+<header >
+    <div class="menu container">
+        <label for="menu" class="menu-icono"></label>
+        <nav class="navbar">
+            <div class="social-icons1">
+                <a href="Index.html"><i class="">Inicio</i></a>
+                <a href="https://www.facebook.com/OCVParrasCoahuila"><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/parrasdelafuente/"><i class="fab fa-instagram"></i></a>
+        </nav>
+    </div>
+</header>
+    <div class="container-form">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Unete a nosotros</p>
+                <button class="IS" type="button" onclick="setAction('IniciarSecion')">Iniciar Sesión</button>
+                <br><br>
+                <button class="IS" type="button" onclick="CambiarPassword()">Recuperar Contraseña</button>
+            </div>
+            <div class="form-information">
+                <div class="form-information-childs">
+                    <h2>Crear una cuenta</h2>
+                    <p>Concierge virtual "Descubre la Magia de Parras"</p>
+                    <form id="form" class="form" method="post" action="conexion.php">
+                        <select name="Trabajo" id="AdminL">
+                        <option value="">Seleccione Su Lugar de Trabajo</option>
+                       <option value="HaciendaM">Hacienda del Marquez</option>
+                       <option value="Perote">Perote</option>
+                       <option value="SanMiguel">Restaurante San Miguel</option>
+                       <option value="TacoTorta">Taco Torta</option>
+                       <option value="UTP">UTP</option>
+                       <option value="Pudencianas">Las Pudencianas</option>
+                    </select>
+                        <label>
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" name="Correo" placeholder="Correo Electronico">
+                        </label>
+                        <label>
+                            <i class='bx bx-lock-alt'></i>
+                            <iconify-icon class="Ojo" icon="arcticons:ojo" onclick="VerContraseña()"></iconify-icon>
+
+                            <input type="password" name="Password" id="passwordField" placeholder="Contraseña">
+                        </label>
+                        <button type="button" onclick="setAction('Registrarse')">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <script src="JS/script.js"></script>
+</body>
+
+</html>

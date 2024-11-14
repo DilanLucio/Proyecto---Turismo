@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Galeria</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <label for="menu" class="menu-icono"></label>
+            <nav class="navbar">
+                <div class="social-icons1">
+
+                    <a href="Index.html">Inicio</a>
+                    <a href="https://www.facebook.com/OCVParrasCoahuila"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/parrasdelafuente/"><i class="fab fa-instagram"></i></a>
+            </nav>
+            </div>
+            <div class="txt">
+                <h2>FOTOS</h2>
+            </div>
+    </header>
+
+    <section class="porfolio-container">
+        <div class="galeria" id="imageContainer"></div>
+    </section>
+
+    <div class="lightbox-container" id="lightboxContainer">
+        <div class="lightbox" id="lightbox">
+            <span class="close" id="closeLightbox">&times;</span>
+            <a href="#" class="prev" id="prevImage"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="#" class="next" id="nextImage"><i class="fa-solid fa-arrow-right"></i></a>
+            <img id="lightboxImage">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="imagenes/Utp.png" alt="">
+                    <h3>Parras de la Fuente</h3>
+                </div>
+                <div class="contact-info">
+                    <h4>Desarrolladores</h4>
+                    <p>Dilan de Jesus Lucio Sustaita</p>
+                    <p>Ivonne Violeta Duron Cortes</p>
+                    <p>Adan Fuentes Garcia</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/OCVParrasCoahuila"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/parrasdelafuente/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const images = [
+            's1.jpg', 's2.jpg', 's3.jpg', 's4.jpg',
+            'imagen principales/casa fImadero.jpg', 'imagen principales/monumentofundadores.jpg',
+            'imagen principales/presidenciamunicipal.jpg', 'imagen principales/callejonhadas.jpg',
+            'imagen principales/cuevamurcielagos.jpg', 'imagen principales/estanqueluz.jpg',
+            'imagen principales/igesias.jpg', 'imagen principales/fuquezapata.jpg',
+            'imagen principales/loyola.jpg', 'imagen principales/plaza delbeso.jpg'
+        ];
+
+        const imageContainer = document.getElementById('imageContainer');
+        const lightboxContainer = document.getElementById('lightboxContainer');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const closeLightbox = document.getElementById('closeLightbox');
+        const prevImage = document.getElementById('prevImage');
+        const nextImage = document.getElementById('nextImage');
+        let currentImageIndex = 0;
+
+        images.forEach((image, index) => {
+            const imgElement = document.createElement('img');
+            imgElement.src = `imagenes/${image}`;
+            imgElement.alt = `Image ${index + 1}`;
+            imgElement.addEventListener('click', () => openLightbox(index));
+            imageContainer.appendChild(imgElement);
+        });
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            lightboxImage.src = `imagenes/${images[index]}`;
+            lightboxContainer.style.display = 'flex';
+        }
+
+        closeLightbox.addEventListener('click', () => {
+            lightboxContainer.style.display = 'none';
+        });
+
+        prevImage.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            lightboxImage.src = `imagenes/${images[currentImageIndex]}`;
+        });
+
+        nextImage.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            lightboxImage.src = `imagenes/${images[currentImageIndex]}`;
+        });
+        lightboxContainer.style.display = 'none';
+    </script>
+</body>
+
+</html>

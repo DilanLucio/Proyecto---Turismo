@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.Btncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn :hover {
+    background-color: #094f7e;
+}
+
+.btn :active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+}
+
+.vinicolas {
+    background-color: #094f7e;
+    background-image: url('vinicolas.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hoteles {
+    background-color: #094f7e;
+    background-image: url('s4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Iglesia {
+    background-color: #094f7e;
+    background-image: url('igesias.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Plaza {
+    background-color: #094f7e;
+    background-image: url('plaza\ delbeso.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SitiosN {
+    background-color: #094f7e;
+    background-image: url('sn.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Restaurantes {
+    background-color: #094f7e;
+    background-image: url('Restaurantes.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SitiosC {
+    background-color: #094f7e;
+    background-image: url('SitiosC.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 80px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: bounce 1s infinite;
+}
+
+
+/* Animación de entrada */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animación de rebote */
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.header-text p {
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #12a82b;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background-color: #150070;
+}
+
+.group-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.services {
+    padding: 50px 0px;
+    text-align: center;
+    color: black;
+}
+
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.service {
+    padding: 35px 25px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+.service h3 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #eeeded;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.contact-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-icons1 a {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.social-icons1 a:hover {
+    color: #666666;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #666;
+}
+
+.avatar {
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    top: 400px;
+    /* Ajusta la posición vertical del avatar */
+    left: 1180px;
+    /* Ajusta la posición horizontal del avatar */
+    cursor: pointer;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 80%;
+    /* Ajusta la posición vertical del mensaje de bienvenida */
+    left: 80%;
+    /* Ajusta la posición horizontal del mensaje de bienvenida */
+    transform: translate(-50%, -50%);
+    /* Centra verticalmente y horizontalmente */
+    font-size: 30px;
+    /* Ajusta el tamaño de fuente del mensaje de bienvenida */
+}
+
+@media(max-width: 991px) {
+    header {
+        height: 55vh;
+    }
+    .header-text {
+        margin-top: 45px;
+        padding: 0px 25px;
+    }
+    .services {
+        padding: 35px;
+    }
+    .service p {
+        font-size: 15px;
+    }
+    .text-1 {
+        padding: 0px;
+        margin-bottom: 35px;
+    }
+    .service {
+        margin-bottom: 20px;
+    }
+    .service img {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .porfolio {
+        padding: 0px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .porfolio-txt p {
+        margin: 0px;
+    }
+    .imgs {
+        flex-direction: column;
+        align-items: center
+    }
+    .imgs img {
+        margin: 15px 0px 0px 0px;
+    }
+    .bg-txt {
+        padding: 30px;
+    }
+    .numbers {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ft {
+        text-align: center;
+        flex-direction: column;
+    }
+    .enlace form {
+        align-items: center;
+    }
+    .avatar {
+        width: 150px;
+        height: 180px;
+        position: absolute;
+        top: 600px;
+        /* Ajusta la posición vertical del avatar */
+        left: 250px;
+        /* Ajusta la posición horizontal del avatar */
+        cursor: pointer;
+    }
+    .welcome-message {
+        position: absolute;
+        top: 75%;
+        /* Ajusta la posición vertical del mensaje de bienvenida */
+        left: 82%;
+        /* Ajusta la posición horizontal del mensaje de bienvenida */
+        transform: translate(-50%, -50%);
+        /* Centra verticalmente y horizontalmente */
+        font-size: 25px;
+        /* Ajusta el tamaño de fuente del mensaje de bienvenida */
+    }
+}

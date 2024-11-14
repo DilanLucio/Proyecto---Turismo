@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utp</title>
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="styles/RecorridosCss.css">
+  <link rel="stylesheet" href="styles/Reserva.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="Utp">
+    <div class="menu container">
+      <label for="menu" class="menu-icono"></label>
+      <nav class="navbar">
+        <div class="social-icons1">
+          <a href="Index.html"><i class="">Inicio</i></a>
+          <a href="https://www.facebook.com/OCVParrasCoahuila"><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/parrasdelafuente/"><i class="fab fa-instagram"></i></a>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h1>UTP</h1>
+    </div>
+  </header>
+  <div class="Informacion">
+    <h1> </h1>
+  </div>
+  <div class="Recorrido">
+    <div class="video-overlay">
+        <video autoplay loop muted>
+            <source src="" type="video/mp4" >
+            Tu navegador no admite la etiqueta de video.
+        </video>
+    </div>
+    <iframe frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7Js5d?logo=1&info=1&fs=1&vr=0&autorotate=0.12&autop=10&autopalt=1&thumbs=0&alpha=0.60&inst=es"></iframe>
+</div>
+
+  <div class="Informacion">
+    <h1> </h1>
+  </div>
+  <div class="Reservacion">
+    <iframe class="Mapa1"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.5555798315077!2d-102.18190662519488!3d25.453117521288515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868f4944234037bb%3A0x95ba956433e7124c!2sUniversidad%20Tecnol%C3%B3gica%20de%20Parras%20de%20la%20Fuente!5e0!3m2!1ses-419!2smx!4v1698337726764!5m2!1ses-419!2smx"
+      width="600" height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="Form">
+
+      <form id="formulario" method="post" action="Formulario.php">
+        <ul>
+          <li>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" name="nombre" placeholder="Nombre Completo" >
+
+          </li>
+          <li>
+            <label for="Corre">Correo Electronico</label>
+            <input type="email" name="Correo" placeholder="Correo Electronico" autocorrect="off" autocapitalize="none" >
+            <small>Formato válido: usuario@dominio.com</small>
+          </li>
+          <li>
+            <label for="NTelefono">Numero Celular</label>
+            <input type="text" name="Telefono" placeholder="Numero de Celular" autocorrect="off">
+          </li>
+          <li>
+            <label for="fecha">Fecha de Reservación</label>
+            <input type="date" name="FechaReservacion" id="fecha">
+          </li>
+          <li>
+            <label for="time">Hora de Reserva</label>
+            <input type="time" name="HoraReservacion" min="7:00" max="19:00" step="3600">    
+                 
+          </li>
+          <li>
+          <label for="Ntikets">Numero de Personas</label>
+          <input type="number" name="Ntickets">
+          </li>
+          <li>
+        
+            <button type="submit" value="Enviar">Reservar</button>
+          </li>
+        </ul>
+
+      </form>
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-content"> 
+        <div class="logo">
+          <img src="imagenes/Utp.png" alt="">
+          <h3>Parras de la Fuente</h3>
+        </div>
+        <div class="contact-info">
+          <h4>Desarrolladores</h4>
+          <p>Dilan de Jesus Lucio Sustaita</p>
+          <p>Ivonne Violeta Duron Cortes</p>
+          <p>Adan Fuentes Garcia</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/OCVParrasCoahuila"><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/parrasdelafuente/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

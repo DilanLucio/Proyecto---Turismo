@@ -1,0 +1,345 @@
+#formulario {
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 100px;
+}
+
+#playButton {
+    display: none;
+}
+
+#miAudio {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #34e9d0;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.header-text {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
+}
+
+.header-text h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.header-text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.services {
+    padding: 50px 0px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service {
+    padding: 30px 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.porfolio-txt h2 {
+    font-size: 55px;
+    margin: 35px;
+}
+
+.porfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porfolio-txt {
+    text-align: center;
+}
+
+.txt h2 {
+    display: grid;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="time"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: none;
+}
+
+/* Estilo al pasar el cursor sobre el elemento */
+input[type="time"]:hover {
+    border-color: #666; /* Cambia el color del borde al pasar el cursor */
+}
+
+/* Estilo enfocado */
+input[type="time"]:focus {
+    border-color: #009688; /* Cambia el color del borde cuando el elemento está enfocado */
+    outline: none; /* Quita el borde punteado predeterminado de algunos navegadores */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.Form {
+    position: relative;
+    left: 100px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Reservacion {
+    display: flex;
+}
+
+.Reservacion img {
+    display: inline-flex;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.Mapa1{
+    position: relative;
+    top: 50px;
+    left: 200px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 16px;
+}
+@media (max-width: 991px) {
+    #formulario {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .header {
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .header-text h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .menu {
+        top: 0;
+        padding: 10px 0;
+        align-items: center;
+    }
+    
+    .menu .logo {
+        font-size: 20px;
+    }
+    
+    .menu .navbar ul li a {
+        font-size: 16px;
+    }
+    
+    .header-text h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .header-text h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .services {
+        padding: 30px 0;
+    }
+    
+    .services h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .group-services {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .service {
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    .service img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .service h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .service p {
+        font-size: 14px;
+    }
+    
+    .porfolio-txt h2 {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    
+    .porfolio-container {
+        flex-direction: column;
+    }
+    
+    .txt h2 {
+        justify-content: center;
+    }
+    /* Estilos generales para dispositivos móviles */
+.Reservacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.Form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    width: 80%;
+    left: 50px;
+}
+
+.Mapa1 {
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    top: -30px;
+    left: 50px;
+    width: 80%;
+}
+
+
+
+
+}

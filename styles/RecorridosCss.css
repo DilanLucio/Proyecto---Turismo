@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #34e9d0;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+}
+
+.Utp {
+    background-color: #094f7e;
+    background-image: url('universidad.jfif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.StoMadero {
+    background-color: #094f7e;
+    background-image: url('santomadero.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PlazaReloj {
+    background-color: #094f7e;
+    background-image: url('plazareloj.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Perote {
+    background-color: #094f7e;
+    background-image: url('hotelperote.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TacoTorta {
+    background-color: #094f7e;
+    background-image: url('tacotorta.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RSanMiguel {
+    background-color: #094f7e;
+    background-image: url('RinconM.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pudencianas {
+    background-color: #094f7e;
+    background-image: url('');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HM {
+    background-color: #094f7e;
+    background-image: url('Perote.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pudencianas {
+    background-color: #094f7e;
+    background-image: url('pudencianas.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EstanqueLuz {
+    background-color: #094f7e;
+    background-image: url('estanqueluz.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CasaCultura {
+    background-color: #094f7e;
+    background-image: url('2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: bounce 1s infinite;
+}
+
+
+
+/* Animación de entrada */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animación de rebote */
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.Informacion {
+    padding: 15px;
+}
+
+.Recorrido {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Ajusta la altura y otros estilos según tus necesidades */
+}
+
+.Recorrido iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 380px;
+    left: -100px;
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: 50%; /* Ajusta la altura según tus necesidades */
+    pointer-events: none;
+    z-index: 2;
+}
+
+.video-overlay video {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    background-color: #eeeded;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.contact-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-icons1 a {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons1 a:hover {
+    color: #666666;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #666;
+}
+
+
+/*responive*/
+
+@media (max-width: 991px) {
+    header {
+        height: 55vh;
+    }
+    .header-text {
+        margin-top: 50px;
+        padding: 0 25px;
+    }
+    .header-text h1 {
+        font-size: 75px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

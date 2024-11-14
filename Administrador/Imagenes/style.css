@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.menu .logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: #34e9d0;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+}
+
+.menu {
+    display: Flex;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+
+.AdminUTP{
+    background-color: #094f7e;
+    background-image: url('universidad.jfif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.AdminPerote{
+  background-color: #094f7e;
+  background-image: url('Perote.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.AdminTacoTorta{
+  background-color: #094f7e;
+  background-image: url('Imagenes/tacotorta.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.AdminRSanMiguel{
+  background-color: #094f7e;
+  background-image: url('Imagenes/RinconM.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.AdminPudencianas{
+  background-color: #094f7e;
+  background-image: url('');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.AdminHM{
+  background-color: #094f7e;
+  background-image: url('imagenes/Perote.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.header-text {
+    text-align: center;
+    width: 700px;
+}
+.header-text h1{
+    color: #ffffff;
+    font-size: 100px;
+}
+.TxtReserva {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  border: 2px solid #333;
+}
+
+
+th {
+  background-color: #007BFF; 
+  color: #fff; 
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #333; 
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+
+tr:hover {
+  background-color: #ccc; 
+}
+
+
+td {
+  padding: 10px;
+  border: 1px solid #333; 
+}
+
+footer {
+    background-color: #eeeded;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    
+    width: 200px;
+    height: 100px;
+  }
+  
+  .logo h3 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  .social-icons1 a {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons1 a:hover {
+    color: #666666;
+  }
+  .social-icons a {
+    margin-left: 10px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #666;
+  }
