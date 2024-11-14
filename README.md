@@ -1,4 +1,4 @@
-<h1>tourism system </h1>
+<h1>Tourism system </h1>
 
 <h2>Description. </h2>
 
@@ -23,11 +23,14 @@ Technologies:
 
 <div>
 <h2>Examples:</h2>
-  ![image](https://github.com/user-attachments/assets/70dffdbe-2b66-43c7-967b-c7f52c34bd23)
+ <img src="https://github.com/user-attachments/assets/70dffdbe-2b66-43c7-967b-c7f52c34bd23">
+   <br>
   <br>
-  ![image](https://github.com/user-attachments/assets/ccc8f010-fa8b-4596-a92d-d2b407d8c841)
+  <img src="https://github.com/user-attachments/assets/ccc8f010-fa8b-4596-a92d-d2b407d8c841">
   <br>
-  ![image](https://github.com/user-attachments/assets/255201e0-8105-4262-9559-f344ef8324e5)
+  <br>
+  <img src="https://github.com/user-attachments/assets/255201e0-8105-4262-9559-f344ef8324e5">
+
 
 </div>
 
